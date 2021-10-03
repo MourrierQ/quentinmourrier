@@ -19,6 +19,23 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.icons\.svg$/
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `lato`,
+        ],
+        display: 'swap'
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

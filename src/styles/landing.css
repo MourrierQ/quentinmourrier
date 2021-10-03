@@ -1,0 +1,60 @@
+.landing {
+    height: calc(100vh - var(--nav-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: var(--nav-height);
+}
+
+.landing .salutations {
+    color: var(--text-green);
+    font-size: 1.2rem;
+    filter: brightness(1.2);
+    font-family: Consolas,monaco,monospace; 
+}
+
+.landing .title {
+    color: var(--text-titles);
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 20px 0;
+}
+
+.landing .subtitle {
+    color: var(--text-content);
+    font-size: 4rem;
+    margin-bottom: 30px;
+    filter: brightness(1.3);
+    width: 80%;
+}
+
+.presentation {
+    color: var(--text-content);
+    font-size: 1.2rem;
+    width: 80%;
+    margin-bottom: var(--nav-height);
+}
+
+.presentation a {
+    text-decoration: none;
+    color: var(--text-green);
+    transition: all .3s ease;
+    display: inline-block;
+}
+
+.presentation a:hover {
+    filter: brightness(1.3);
+}
+
+.presentation a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: var(--text-green);
+    transition: 300ms;
+}
+
+.presentation a:hover::after {
+    width: 100%;
+}

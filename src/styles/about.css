@@ -1,0 +1,47 @@
+.about {
+
+}
+
+.about .about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .presentation {
+    margin-right: 50px;
+    flex: 1;
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.about .presentation p {
+    margin-bottom: 16px;
+}
+
+.about .image-wrapper {
+    position: relative;
+}
+
+.about .image {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    z-index: 1000;
+}
+
+.about .image img {
+    border-radius: 5px;
+}
+
+.about .image::after {
+    content: '';
+    border: 2px solid var(--text-green);
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: -1;
+}

@@ -1,0 +1,33 @@
+.mail {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    flex-direction: column;
+    color: var(--text-content);
+    align-items: center;
+    font-family: Consolas,monaco,monospace;
+    filter: brightness(1.5);
+    font-size: .9rem;
+    width: 50px;
+}
+
+.mail a {
+    margin-bottom: 120px;
+    transform: rotate(90deg);
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail a:hover {
+    color: var(--text-green);
+    cursor: pointer;
+}
+
+.mail .stroke {
+    background-color: var(--text-content);
+    width: 1px;
+    height: 100px;
+}

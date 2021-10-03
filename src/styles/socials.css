@@ -1,0 +1,29 @@
+.socials {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 25px;
+    flex-direction: column;
+    color: var(--text-content);
+    align-items: center;
+    width: 50px;
+    filter: brightness(1.5);
+}
+
+.socials a {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+}
+
+.socials a:hover {
+    color: var(--text-green);
+    cursor: pointer;
+}
+
+.socials .stroke {
+    background-color: var(--text-content);
+    width: 1px;
+    height: 100px;
+}
