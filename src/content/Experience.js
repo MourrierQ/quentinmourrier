@@ -1,5 +1,6 @@
 import React from 'react'
 import ContentTitle from '../components/ContentTitle'
+import InlineLink from '../components/InlineLink'
 
 export default function Experience() {
     return (
@@ -11,7 +12,7 @@ export default function Experience() {
             <ContentTitle number="02." title="Where I've worked"/>
             <ul>
                 <li className="experience-item">
-                    <span className="title">Fullstack Developer <span className="company"> @ Odoo</span></span>
+                    <span className="title">Fullstack Developer <InlineLink href="https://www.odoo.com">@ Odoo</InlineLink></span>
                     <span className="year">September 2018 - August 2021</span>
                     <ul className="description">
                         <li><p>Write modern, maintainable code alongside 200 other developers for the Odoo ERP system. My work was done in Python and Javascript</p></li>
@@ -20,7 +21,7 @@ export default function Experience() {
                     </ul>
                 </li>
                 <li className="experience-item">
-                    <span className="title">.Net Developer Trainee <span className="company"> @ Technobel</span></span>
+                    <span className="title">.Net Developer Trainee <InlineLink href="https://www.technobel.be"> @ Technobel</InlineLink></span>
                     <span className="year">October 2017 - August 2018</span>
                     <ul className="description">
                         <li><p>Learn the basics of .Net development with skilled trainers from Cognitic and BStorm</p></li>
