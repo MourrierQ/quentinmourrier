@@ -3,8 +3,12 @@ import ContentTitle from '../components/ContentTitle'
 
 export default function Experience() {
     return (
-        <div className="experience">
-            <ContentTitle number="02" title="Where I've worked"/>
+        <div className="experience" 
+            id="experience" 
+            data-sal="fade"
+            data-sal-delay="1"
+            data-sal-easing="ease">
+            <ContentTitle number="02." title="Where I've worked"/>
             <ul>
                 <li className="experience-item">
                     <span className="title">Fullstack Developer <span className="company"> @ Odoo</span></span>
@@ -19,7 +23,7 @@ export default function Experience() {
                     <span className="title">.Net Developer Trainee <span className="company"> @ Technobel</span></span>
                     <span className="year">October 2017 - August 2018</span>
                     <ul className="description">
-                        <li><p>Learn the basics of .Net development with skilled trainer from Cognitic and BStorm</p></li>
+                        <li><p>Learn the basics of .Net development with skilled trainers from Cognitic and BStorm</p></li>
                         <li><p>In Depth learning of design patterns, Asp.Net, WPF, MVVM/MVC , SQL Server and Entity Framework.</p></li>
                         <li><p>Extended Soft Skills training</p></li>
                     </ul>

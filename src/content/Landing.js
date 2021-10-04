@@ -2,7 +2,10 @@ import React from 'react'
 
 export default function Landing() {
     return (
-        <div className="landing">
+        <div className="landing"
+            data-sal="fade"
+            data-sal-delay="100"
+            data-sal-easing="ease">
             <span className="salutations">Hi, my name is</span>
             <h1 className="title">Quentin Mourrier.</h1>
             <h2 className="subtitle">I build things for the web</h2>

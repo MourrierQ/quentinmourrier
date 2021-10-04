@@ -4,8 +4,12 @@ import ContentTitle from '../components/ContentTitle'
 
 export default function About() {
     return (
-        <div className="about">
-            <ContentTitle number="01" title="About Me" />
+        <div className="about" 
+            id="about"   
+            data-sal="fade"
+            data-sal-delay="1"
+            data-sal-easing="ease">
+            <ContentTitle number="01." title="About Me" />
             <div className="about-content">
                 <div className="presentation">
                     <p>

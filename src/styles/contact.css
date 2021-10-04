@@ -1,0 +1,49 @@
+.contact {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .content-title .number {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.contact .content-title .title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact .content-title .stroke {
+    display: none;
+}
+
+.contact .presentation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact .contact-button {
+    border: 1px solid var(--text-green);
+    color: var(--text-green);
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-family: Consolas,monaco,monospace;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.contact .contact-button:hover {
+    cursor: pointer;
+    filter: brightness(1.4);
+}

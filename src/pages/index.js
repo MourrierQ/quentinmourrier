@@ -3,8 +3,10 @@ import Mail from "../components/Mail"
 import Nav from "../components/Nav"
 import Socials from "../components/Socials"
 import About from "../content/About"
+import Contact from "../content/Contact"
 import Experience from "../content/Experience"
 import Landing from "../content/Landing"
+import Work from "../content/Work"
 import "../styles/global.css"
 
 const IndexPage = () => {
@@ -15,6 +17,8 @@ const IndexPage = () => {
         <Landing/>
         <About/>
         <Experience/>
+        <Work/>
+        <Contact/>
       </div>
       <Socials/>
       <Mail/>

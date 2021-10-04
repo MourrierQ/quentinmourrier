@@ -4,12 +4,16 @@
 @import "./mail.css";
 @import "./about.css";
 @import "./experience.css";
+@import "./contact.css";
+@import "./work.css";
 
 :root {
     --bg: #0a192f;
-    --text-green: #4cc3ad;
+    --bg-secondary: #112240;
+    --text-green: #98E2C6;
     --text-titles: #ccd6f6;
     --text-content: #626d89;
+    --text-content-secondary: #a8b2d1;
     --nav-height: 100px;
 }
 
@@ -45,6 +49,7 @@ svg {
 .content-title {
     display: flex;
     align-items: center;
+    padding: 20px 0;
     margin-bottom: 50px;
 }
 

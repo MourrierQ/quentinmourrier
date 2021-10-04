@@ -1,24 +1,27 @@
 import React from 'react'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 import Logo from '../images/quentinmourrier.icons.svg'
+import useScroll from '../hooks/useScroll'
 
 export default function Nav() {
+    const [visible] = useScroll();
     return (
-        <nav className="navbar">
+        <nav className={visible ? "navbar visible" : "navbar"}>
             <div className="logo">
                 <Logo/>
             </div>
             <ul className="navbar-nav">
                 <li>
-                    <a><span>01.</span> About</a>
+                    <a onClick={() => scrollTo("#about")}><span>01.</span> About</a>
                 </li>
                 <li>
-                    <a><span>02.</span> Experience</a>
+                    <a onClick={() => scrollTo("#experience")}><span>02.</span> Experience</a>
                 </li>
                 <li>
-                    <a><span>03.</span> Work</a>
+                    <a onClick={() => scrollTo("#work")}><span>03.</span> Work</a>
                 </li>
                 <li>
-                    <a><span>04.</span> Contact</a>
+                    <a onClick={() => scrollTo("#contact")}><span>04.</span> Contact</a>
                 </li>
                 <li>
                     <a className="resume">Resume</a>
